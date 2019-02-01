@@ -1,0 +1,79 @@
+/* FLEXBOX 
+Parent = Flex Container
+Children = Flex Items
+
+Property  - Value 
+    |         | 
+display:    flex;
+
+
+Main Axis vs Cross Axis
+
+Main Axis -> flex-direction: row; - goes from the top left corner to the right
+Cross Axis                                        top             to     bottom
+
+Main Axis -> flex-direction: row-reverse; - Our main axis now starts in the right top corner because if the normal row is from left to right from the top left to the top right THEN row-reverse should be from the TOP RIGHT to the TOP LEFT corner of our FLEX CONTAINER
+Cross Axis                                                                                                                                                                                                          TOP                  BOTTOM
+
+
+*/
+
+
+html {
+    background-color: #fa923f;
+    padding: 10px;
+}
+
+body {
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+}
+
+/* flexbox */
+.parent {
+    background-color: #f073e1;
+    margin: 10px;
+    padding: 30px;
+    height: 500px;
+
+    display: flex;
+    flex-flow: column-reverse wrap; /* Flex-direction; Flex-wrap; Standard Values */
+
+    
+}
+
+
+
+
+.div1 {
+    background-color: #f800db;
+    margin: 5px;
+}
+.div2 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    font-size: 30px;
+}
+.div3 {
+    background-color: #f800db;
+    margin: 5px;
+    height: 150px;
+}
+.div4 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+}
+.div5 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;
+}
+.div6 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;
+}
